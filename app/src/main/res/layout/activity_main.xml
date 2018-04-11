@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviib.firesafety.MainActivity"
+    android:background="@drawable/idesign"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="500dp"
+        android:layout_height="284dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Score"
+        android:layout_marginBottom="167dp"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/fireee"
+        android:fontFamily="@font/alegreya_sc"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:layout_alignLeft="@+id/answer1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/answer1"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/answer2"
+        android:layout_alignLeft="@+id/answer2"
+        android:layout_alignStart="@+id/answer2"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonshape"
+        android:text="Button"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/answer2"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/buttonshape"
+        android:text="Button"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="117dp"
+        android:layout_height="64dp"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/answer2"
+        android:layout_alignStart="@+id/answer2"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/butmenu"
+        android:text="Menu"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:background="@drawable/butmenu"
+        android:text="Instructions"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
+
+
+</android.support.constraint.ConstraintLayout>
